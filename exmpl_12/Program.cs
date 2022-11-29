@@ -5,6 +5,6 @@
 // 	782 -> 2
 // 	918 -> 8
 Console.WriteLine("Введите трехзначное число N");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 Console.Write("Последняя цифра числа " + number%10);
 

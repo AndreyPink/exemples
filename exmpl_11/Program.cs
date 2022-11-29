@@ -3,7 +3,7 @@
 // 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4" 
 // 2 -> " -2, -1, 0, 1, 2"
 Console.WriteLine("Введите N");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 int start_number = number * (-1);
 while (start_number < number + 1)
 {
