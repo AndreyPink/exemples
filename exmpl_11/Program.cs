@@ -7,8 +7,7 @@ int number = int.Parse(Console.ReadLine());
 int start_number = number * (-1);
 while (start_number < number + 1)
 {
-    Console.Write(start_number);
-    Console.Write(" ");
+    Console.Write(start_number + " ");
     start_number ++;
 }
 
