@@ -4,8 +4,8 @@
 // a = 9, b = -3 -> да 
 // a = -3 b = 9 -> нет
 Console.WriteLine("Enter 2 numbers:");
-int number_1 = int.Parse(Console.ReadLine());
-int number_2 = int.Parse(Console.ReadLine());
+int number_1 = int.Parse(Console.ReadLine()!);
+int number_2 = int.Parse(Console.ReadLine()!);
 if(number_1 == number_2 * number_2)
 {
     Console.WriteLine("Yes");

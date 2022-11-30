@@ -36,7 +36,7 @@
 //
 
 Console.Write("Введите номер дня недели ");
-int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine()!);
 if(number > 7)
 {
     Console.WriteLine("Введено неверное число");
