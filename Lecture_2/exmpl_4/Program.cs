@@ -1,7 +1,8 @@
-﻿using System;
+﻿//генерация массива и вывод его на экран 
+//с помощью созданных методов
+using System;
 using System.Collections.ObjectModel;
-//
-//
+
 void FillArray(int[] collection)
 {
     int length = collection.Length;
