@@ -9,7 +9,7 @@
 Console.WriteLine("Введите два числа (через enter)");
 int num1 = int.Parse(Console.ReadLine()!);
 int num2 = int.Parse(Console.ReadLine()!);
-if (num1 == num2 * num2 | num2 == num1 * num1)
+if (num1 == Math.Pow(num2, 2) | num2 == Math.Pow(num1,2))
 {
     Console.WriteLine("да");
 }
