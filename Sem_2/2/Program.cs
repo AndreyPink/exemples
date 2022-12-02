@@ -9,6 +9,8 @@
 int num = new Random().Next(100,1000);
 int a1 = num / 100;
 int a3 = num % 10;
-Console.WriteLine($"Случайное число {num}, это же число, но без 2-й цифры {a1}{a3}");
+Console.WriteLine($"Случайное число {num}, это же число, но без 2-й цифры {a1*10 +a3}");
+
+
 
 
