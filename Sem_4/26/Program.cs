@@ -15,7 +15,6 @@ int CountNum(int num)
     }
     return count;
 }
-
 Console.WriteLine("Введите число N");
 int n = int.Parse(Console.ReadLine()!);
 Console.Write($"Кол-во цифр в числе {n} = {CountNum(n)}");
