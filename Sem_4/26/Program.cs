@@ -5,9 +5,9 @@
 // 89126 -> 5
 
 
-int count = 0;
 int CountNum(int num)
 {
+    int count = 0;
     while (num > 0)
     {
         num /= 10;
