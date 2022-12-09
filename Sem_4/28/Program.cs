@@ -14,5 +14,5 @@ int GetProdNum(int num)
 Console.Clear();
 Console.WriteLine("Введите число N");
 int n = int.Parse(Console.ReadLine()!);
-Console.Write($"Сумма чисел равна {GetProdNum(n)}");
+Console.Write($"Произведение чисел равно {GetProdNum(n)}");
 
