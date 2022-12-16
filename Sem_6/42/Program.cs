@@ -6,23 +6,26 @@
 
 
 // 45%2 = 22 -> 1
-// 22/2 = 11 -> 0
+// 22%2 = 11 -> 0
 // 11%2 = 5 -> 1
 // 5%2 = 2 -> 1
 // 2%2 = 1 -> 0
 // 1%2 = 0 -> 1
 
-Console.WriteLine("Введите число:");
-int num = int.Parse(Console.ReadLine()!);
-Console.WriteLine($"Число {num} конвертировали в двоичное");
 
+void ConvertToDouble(int Number)
+{
 string numDouble = String.Empty;
-string numDoubleRev = String.Empty;
 while (true)
 {
-    int res = num%2;
-    numDouble = res + numDouble;
-    num/=2;
-    if(num == 0) break;
+    int res = Number%2;
+    numDouble = res + numDouble; 
+    Number/=2; 
+    if(Number == 0) break;
 }
 Console.Write(numDouble);
+}
+Console.WriteLine("Введите число для преобразования:");
+int num = int.Parse(Console.ReadLine()!);
+Console.Write($"Число {num} конвертировали в двоичное ");
+ConvertToDouble(num);

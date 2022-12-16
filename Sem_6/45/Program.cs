@@ -8,15 +8,16 @@ int[] CreateArray()
 int[] array = new int[4];
 for (int i = 0; i < 4; i++)
 {
-    Console.WriteLine($"Введите {i+1} элемента массива:");
+    Console.WriteLine($"Введите {i+1} элемент массива:");
     array[i] = int.Parse(Console.ReadLine()!);
 }
-Console.WriteLine(string.Join(" ", array));
+Console.WriteLine($"Сформированный массив: {string.Join(" ", array)}");
 return array;
 }
 
 void NewArray(int[] Array)
 {
+    Console.Write("Новый массив почти такой же как и старый)), но он новый ;-)) ");
     int[] newArr = new int[Array.Length];
     for (int i = 0; i < newArr.Length; i++)
     {
