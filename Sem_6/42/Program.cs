@@ -12,18 +12,24 @@
 // 2%2 = 1 -> 0
 // 1%2 = 0 -> 1
 
+// while (true)
+// {
+//     int res = Number%2;
+//     numDouble = res + numDouble; 
+//     Number/=2; 
+//     if(Number == 0) break;
+// }
+
+
 
 void ConvertToDouble(int Number)
 {
-string numDouble = String.Empty;
-while (true)
-{
-    int res = Number%2;
-    numDouble = res + numDouble; 
-    Number/=2; 
-    if(Number == 0) break;
-}
-Console.Write(numDouble);
+    string numDouble = String.Empty;
+    for (int i = Number; i > 0; i /= 2)
+    {
+        numDouble = i % 2 + numDouble;
+    }
+    Console.Write(numDouble);
 }
 Console.WriteLine("Введите число для преобразования:");
 int num = int.Parse(Console.ReadLine()!);
