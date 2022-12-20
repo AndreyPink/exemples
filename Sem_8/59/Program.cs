@@ -34,9 +34,9 @@ int[] SearchMinElem(int[,] array)
             }
         }
     }
-    int[] tempArray = { minRow, minColumn };
-    Console.WriteLine($"Удаляем строку №{minRow}, столбец №{minColumn}\n");
-    return tempArray;
+    int[] data = { minRow, minColumn };
+    Console.WriteLine($"Отхреначиваем строку №{minRow}, столбец №{minColumn}\n");
+    return data;
 }
 
 void CutArray(int[,] array, int[] minData)
