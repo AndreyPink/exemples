@@ -5,8 +5,9 @@
 //МЕТОД ЧЕРЕЗ INT
 int DegreeNumber(int a, int b)
 {
-    if(b > 1) return a * DegreeNumber(a, b -1);
+    if (b > 1) return a * DegreeNumber(a, b - 1);
+    else if (b == 0) return 1;
     return a;
 }
-Console.WriteLine(DegreeNumber(2,10));
+Console.WriteLine(DegreeNumber(2, 10));
 
