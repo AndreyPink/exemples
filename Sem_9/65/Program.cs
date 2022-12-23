@@ -4,8 +4,6 @@
 //ВАРИАНТ ВЫВОДА ЧЕРЕЗ СТРОЧНЫЙ МАССИВ
 string LineNumbers(int m, int n)
 {
-    // if (m <= n) return $"{m} " + LineNumbers(m + 1, n);
-    // else return String.Empty;
     return (m + 1 <= n) ? $"{m} " + LineNumbers(m + 1, n) : $"{m}";
 
 }
