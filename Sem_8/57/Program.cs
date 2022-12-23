@@ -21,6 +21,8 @@ int[,] CreateArray(int a, int b)
     return matrix;
 }
 
+// создаем новый одномерный массив, в него записываем все элемента старого двумерного. 
+// Далее сортируем одномерный массив. 
 int[] ConvertToSingleAndSort(int[,] array)
 {
     int[] singleArray = new int[array.GetLength(0) * array.GetLength(1)];
@@ -46,6 +48,7 @@ int[] ConvertToSingleAndSort(int[,] array)
     return singleArray;
 }
 
+// Проходим по всем элементам массива и считаем кол-во уникальных. 
 void Frequency(int[] array)
 {
     int countElem = 1;

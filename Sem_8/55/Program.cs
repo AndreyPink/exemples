@@ -19,6 +19,7 @@ int[,] CreateArray(int a, int b)
     return matrix;
 }
 
+// создаем новый массив, в котором перезаписываем элементы старого при этом меняя местами строки и столбцы
 void ReversMatrix(int[,] array)
 {
     Console.WriteLine("Перевернутый массив:");
