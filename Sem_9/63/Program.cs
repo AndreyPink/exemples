@@ -6,8 +6,6 @@
 //ВАРИАНТ ВЫВОДА ЧЕРЕЗ СТРОЧНЫЙ МАССИВ
 string LineNumbers(int n)
 {
-// if (n >= 1) return LineNumbers(n-1) + $" {n}";
-// else return String.Empty;
 return (n>=2) ? LineNumbers(n-1) + $" {n}" : "1";
 }
 Console.WriteLine(LineNumbers(5));
