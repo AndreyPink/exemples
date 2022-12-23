@@ -9,5 +9,12 @@ int DegreeNumber(int a, int b)
     else if (b == 0) return 1;
     return a;
 }
-Console.WriteLine(DegreeNumber(2, 10));
+Console.WriteLine(DegreeNumber(2, 3));
 
+
+//МЕТОД ЧЕРЕЗ INT С ТЕРНАРНЫМ ОПЕРАТОРОМ
+int DegreeNumber2(int a, int b)
+{
+    return b == 0 ? 1 : a * DegreeNumber2(a, b - 1);
+}
+Console.WriteLine(DegreeNumber2(2, 10));
