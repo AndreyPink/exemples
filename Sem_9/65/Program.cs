@@ -5,7 +5,6 @@
 string LineNumbers(int m, int n)
 {
     return (m + 1 <= n) ? $"{m} " + LineNumbers(m + 1, n) : $"{m}";
-
 }
 
 Console.WriteLine(LineNumbers(5, 10));
