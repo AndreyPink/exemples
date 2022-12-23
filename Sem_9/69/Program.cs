@@ -13,8 +13,7 @@ Console.WriteLine(DegreeNumber(2, 3));
 
 
 //МЕТОД ЧЕРЕЗ INT С ТЕРНАРНЫМ ОПЕРАТОРОМ
-int DegreeNumber2(int a, int b)
-{
-    return b == 0 ? 1 : a * DegreeNumber2(a, b - 1);
-}
+int DegreeNumber2(int a, int b) 
+{return b == 0 ? 1 : a * DegreeNumber2(a, b - 1);}
+
 Console.WriteLine(DegreeNumber2(2, 10));
