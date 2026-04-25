@@ -1,0 +1,1 @@
+export function matchNannies(nannies:any[], req:any){return nannies.map(n=>{let s=0;if(n.district===req.district)s+=3;if((n.languages||"").includes(req.language))s+=2;if(n.rate<=req.budget)s+=2;return{nanny:n,score:s}}).sort((a,b)=>b.score-a.score).slice(0,5)}
