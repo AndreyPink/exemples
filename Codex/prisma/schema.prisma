@@ -8,24 +8,37 @@ datasource db {
 }
 
 model Nanny {
-  id        Int      @id @default(autoincrement())
-  name      String
-  phone     String
-  district  String
-  languages String
-  experience String
-  rate      Int
-  description String
-  createdAt DateTime @default(now())
+  id              Int      @id @default(autoincrement())
+  name            String
+  phone           String
+  telegram        String?
+  district        String
+  languages       String
+  experience      String
+  childAges       String
+  availability    String
+  rate            Int
+  photoUrl        String?
+  description     String
+  documentConsent Boolean  @default(false)
+  status          String   @default("new")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
 }
 
-model Request {
-  id        Int      @id @default(autoincrement())
-  name      String
-  phone     String
-  district  String
-  childAge  String
-  budget    Int
-  comment   String
-  createdAt DateTime @default(now())
+model ParentRequest {
+  id              Int      @id @default(autoincrement())
+  name            String
+  phone           String
+  telegram        String?
+  district        String
+  childAge        String
+  schedule        String
+  liveIn          Boolean  @default(false)
+  language        String
+  budget          Int
+  comment         String
+  status          String   @default("new")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
 }
