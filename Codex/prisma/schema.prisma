@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Nanny {
+  id        Int      @id @default(autoincrement())
+  name      String
+  phone     String
+  district  String
+  languages String
+  experience String
+  rate      Int
+  description String
+  createdAt DateTime @default(now())
+}
+
+model Request {
+  id        Int      @id @default(autoincrement())
+  name      String
+  phone     String
+  district  String
+  childAge  String
+  budget    Int
+  comment   String
+  createdAt DateTime @default(now())
+}
