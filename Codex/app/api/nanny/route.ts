@@ -1,7 +1,7 @@
-import { prisma } from '@/lib/prisma'
+import { addNanny } from '@/lib/store'
 
 export async function POST(req: Request) {
   const data = await req.json()
-  await prisma.nanny.create({ data })
+  addNanny(data)
   return new Response(JSON.stringify({ ok: true }))
 }

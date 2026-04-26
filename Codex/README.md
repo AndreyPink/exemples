@@ -4,10 +4,12 @@
 
 ```bash
 npm install
-npx prisma generate
-npx prisma migrate dev
 npm run dev
 ```
+
+После запуска портал доступен по адресу: http://localhost:3000
+
+Данные анкет и заявок сохраняются локально в `data/store.json`.
 
 ## Доступ
 
@@ -20,4 +22,3 @@ npm run dev
 - заявки родителей
 - админка
 - простой матчинг
-

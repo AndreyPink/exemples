@@ -1,8 +1,7 @@
-import { prisma } from '@/lib/prisma'
+import { getStore } from '@/lib/store'
 
 export default async function AdminPage() {
-  const nannies = await prisma.nanny.findMany()
-  const requests = await prisma.parentRequest.findMany()
+  const { nannies, requests } = getStore()
 
   return (
     <div style={{padding:20}}>
